@@ -26,7 +26,7 @@ namespace CastleGrimtol.Project
             IRoom MainRoom = new Room("Prison's Main Room", "You are in a giant room with large double doors to the North, and a small door to the West.");
             IRoom Outside = new Room("Outside", "You made it out!");
             IRoom Waterway = new Room("Waterway", "You are standing in a dimbly lit room filled with shallow water.");
-            IRoom DeathRoom = new Room("Mysterious Room", "You stumble into a dark room. You fumble around for a second trying to find an exit. \nYou hear something behind you you turn and scream in horror! You were eaten by a grue.");
+            IRoom DeathRoom = new Room("Mysterious Room", "You stumble into a dark room. You fumble around for a second trying to find an exit. \nYou hear something behind you. You turn and scream in horror! You were eaten by a grue.");
 
             // Cell exits
             PrisonCell.Exits.Add("north", CellBlock);
