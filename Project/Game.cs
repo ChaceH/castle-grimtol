@@ -64,7 +64,7 @@ namespace CastleGrimtol.Project
             CurrentRoom = PrisonCell;
 
             Console.Clear();
-            Console.WriteLine("What's your name?");
+            Console.Write("What's your name? ");
             var name = Console.ReadLine();
             CurrentPlayer = new Player(name);
             Console.WriteLine(CurrentRoom.Description);
@@ -85,7 +85,7 @@ namespace CastleGrimtol.Project
         public void GetUserInput()
         {
             Console.WriteLine("Type 'help' for commands.");
-            Console.WriteLine("What would you like to do?");
+            Console.Write("What would you like to do? ");
             string[] UserCommands;
             string input = Console.ReadLine().ToLower();
             UserCommands = input.Split(' ');
@@ -158,7 +158,7 @@ namespace CastleGrimtol.Project
                     {
                         if (!CurrentPlayer.Inventory.Contains(item))
                         {
-                            Console.WriteLine($"You do not have the required item {item.Name} to enter this room.");
+                            Console.WriteLine($"You do not have the required item to enter this room.");
                             isMissingItems = true;
                         }
                     }
