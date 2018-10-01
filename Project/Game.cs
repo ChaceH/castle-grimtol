@@ -170,7 +170,7 @@ namespace CastleGrimtol.Project
                     } 
                 }
                 if(nextRoom.IsLocked) {
-                    Console.WriteLine($"you must use {nextRoom.ItemsRequiredForEntry[0].Name} to unlock the door.");
+                    Console.WriteLine($"You must use {nextRoom.ItemsRequiredForEntry[0].Name} to unlock the door.");
                     return;
                 }
                 Console.Clear();
