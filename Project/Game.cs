@@ -104,14 +104,12 @@ namespace CastleGrimtol.Project
                     break;
 
                 // USEITEM
-                case "u":
                 case "use":
                     UseItem(UserCommands[1]);
                     break;
 
                 // INVENTORY
                 case "inv":
-                case "i":
                 case "inventory":
                     Inventory();
                     break;
@@ -267,7 +265,7 @@ namespace CastleGrimtol.Project
 
         public void Help()
         {
-            Console.WriteLine("Go <direction> \nUse <item> \nTake <item> \nInventory <display inventory> \nLook <displays current room description> \nSearch <searches current room for items> \nReset <resets the game> \nQuit <quits current game> ");
+            Console.WriteLine("Go <direction> \nUse <item> \nTake <item> \nInventory, or inv (displays player inventory) \nLook (displays current room description) \nSearch (searches current room for items) \nReset (resets the game) \nQuit (quits current game) ");
         }
 
         public void CheckWinConditions()
