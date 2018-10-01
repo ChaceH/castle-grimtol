@@ -25,7 +25,7 @@ namespace CastleGrimtol.Project
             IRoom Courtyard = new Room("Prison's Courtyard", "You are outside, but not free. You are in a courtyard surrounded by walls. \nTo the North, there is a door. To the West there is a small crevasse.");
             IRoom MainRoom = new Room("Prison's Main Room", "You are in a giant room with large double doors to the North, and a small door to the West.");
             IRoom Outside = new Room("Outside", "You made it out!");
-            IRoom Waterway = new Room("Waterway", "You are standing in a dimbly lit room filled with shallow water.");
+            IRoom Waterway = new Room("Waterway", "You are standing in a dimbly lit room filled with shallow water. \nThe only exit is the door you came in through to the East.");
             IRoom DeathRoom = new Room("Mysterious Room", "You stumble into a dark room. You fumble around for a second trying to find an exit. \nYou hear something behind you. You turn and scream in horror! You were eaten by a grue.");
 
             // Cell exits
@@ -84,7 +84,7 @@ namespace CastleGrimtol.Project
 
         public void GetUserInput()
         {
-            Console.WriteLine("Type help for commands.");
+            Console.WriteLine("Type 'help' for commands.");
             Console.WriteLine("What would you like to do?");
             string[] UserCommands;
             string input = Console.ReadLine().ToLower();
@@ -273,7 +273,7 @@ namespace CastleGrimtol.Project
             if (CurrentRoom.Name.Equals("Outside"))
             {
                 Console.Clear();
-                Console.WriteLine("Congratulations you won! Press any key to continue...");
+                Console.WriteLine("Congratulations you won! Press ENTER to continue...");
                 Console.ReadLine();
                 Console.WriteLine("Would you like to play again? (Y/N)");
                 var line = Console.ReadLine();
